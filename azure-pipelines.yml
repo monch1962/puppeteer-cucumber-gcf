@@ -25,9 +25,9 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-    npm run test-server &
-    TEST_SERVER_PID=$?
-    npm test
-    if [ $? -ne 0 ]; then kill $TEST_SERVER_PID && exit 1; fi
-    kill $TEST_SERVER_PID
+    npm run unit-tests
   displayName: 'Run unit tests'
+
+- script: |
+    npm run coverage
+  displayName: 'Update code coverage statistics'

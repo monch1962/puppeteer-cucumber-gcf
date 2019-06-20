@@ -7,10 +7,10 @@
     "/features"
   ],
   "scripts": {
-    "start": "npx cucumber-js --format ./features/support/util/PrettyFormatter",
+    "start": "forever start ./node_modules/forever/bin/forever start ./node_modules/http-server/bin/http-server ./test/html && npx cucumber-js --format ./features/support/util/PrettyFormatter && ./node_modules/forever/bin/forever stop ./node_modules/http-server/bin/http-server ./test/html",
     "test": "jest --verbose --runInBand",
     "test-server": "http-server -p 8080 ./test/html",
-    "test-coverage": "codecov"
+    "test-coverage": "CODECOV_TOKEN='60b4e56a-a584-408e-900a-74a5407de488' codecov"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "codecov": "^3.3.0",
+    "forever": "^1.0.0",
     "http-server": "^0.11.1",
     "jest": "^24.7.1"
   },
@@ -46,12 +47,12 @@
       "./test/jest.setup.js"
     ]
   },
-  "puppeteerOptions" : {
-    "headless": false,
-    "sloMo": 250,
+  "puppeteerOptions": {
+    "headless": true,
+    "sloMo": 0,
     "defaultViewport": {
-        "width": 1000,
-        "height": 1000
+      "width": 800,
+      "height": 600
     }
-}
+  }
 }
