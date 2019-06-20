@@ -22,7 +22,7 @@ steps:
 
 - script: |
     npm run test-server &
-    TEST_SERVER_PID=$!
+    TEST_SERVER_PID=$?
     npm test
     if [ $? -ne 0 ]; then kill $TEST_SERVER_PID && exit 1; fi
     kill $TEST_SERVER_PID
