@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1561030590581" clover="3.2.0">
+  <project timestamp="1561030590582" name="All files">
+    <metrics statements="243" coveredstatements="144" conditionals="114" coveredconditionals="20" methods="42" coveredmethods="35" elements="399" coveredelements="199" complexity="0" loc="243" ncloc="243" packages="4" files="33" classes="33"/>
+    <package name="action">
+      <metrics statements="62" coveredstatements="38" conditionals="18" coveredconditionals="7" methods="12" coveredmethods="9"/>
+      <file name="clickElement.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/clickElement.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+      </file>
+      <file name="deleteCookie.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/deleteCookie.js">
+        <metrics statements="9" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="fileUpload.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/fileUpload.js">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="keyboardPress.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/keyboardPress.js">
+        <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="openUrl.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/openUrl.js">
+        <metrics statements="12" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="30" type="stmt"/>
+        <line num="2" count="30" type="stmt"/>
+        <line num="11" count="30" type="stmt"/>
+        <line num="12" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+      <file name="resizeScreenSize.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/resizeScreenSize.js">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+      </file>
+      <file name="scrollToElement.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/scrollToElement.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+      </file>
+      <file name="setElementStyle.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/setElementStyle.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="setElementValue.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/setElementValue.js">
+        <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+      </file>
+      <file name="setUserAgent.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/setUserAgent.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="waitFor.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/waitFor.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+      </file>
+      <file name="waitForSelector.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/action/waitForSelector.js">
+        <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="check">
+      <metrics statements="139" coveredstatements="65" conditionals="88" coveredconditionals="6" methods="21" coveredmethods="17"/>
+      <file name="checkAccessibility.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkAccessibility.js">
+        <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+      </file>
+      <file name="checkAttribute.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkAttribute.js">
+        <metrics statements="6" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkAttributeContains.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkAttributeContains.js">
+        <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkContainsText.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkContainsText.js">
+        <metrics statements="5" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkCookieExists.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkCookieExists.js">
+        <metrics statements="10" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkCookieValue.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkCookieValue.js">
+        <metrics statements="13" coveredstatements="3" conditionals="8" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkElementEnabled.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkElementEnabled.js">
+        <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkElementExists.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkElementExists.js">
+        <metrics statements="5" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkElementValue.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkElementValue.js">
+        <metrics statements="6" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkElementVisible.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkElementVisible.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+      </file>
+      <file name="checkHasFocus.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkHasFocus.js">
+        <metrics statements="4" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkIsChecked.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkIsChecked.js">
+        <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkIsEmpty.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkIsEmpty.js">
+        <metrics statements="4" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkScreenshot.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkScreenshot.js">
+        <metrics statements="29" coveredstatements="14" conditionals="8" coveredconditionals="3" methods="4" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+      </file>
+      <file name="checkTitle.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkTitle.js">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="checkTitleContains.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkTitleContains.js">
+        <metrics statements="6" coveredstatements="3" conditionals="7" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkUrl.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkUrl.js">
+        <metrics statements="6" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="checkUrlContains.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/check/checkUrlContains.js">
+        <metrics statements="6" coveredstatements="3" conditionals="7" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+    </package>
+    <package name="scope">
+      <metrics statements="27" coveredstatements="26" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6"/>
+      <file name="BrowserScope.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/scope/BrowserScope.js">
+        <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <line num="1" count="32" type="stmt"/>
+        <line num="2" count="32" type="stmt"/>
+        <line num="9" count="34" type="stmt"/>
+        <line num="10" count="34" type="stmt"/>
+        <line num="11" count="34" type="stmt"/>
+        <line num="15" count="33" type="stmt"/>
+        <line num="19" count="33" type="stmt"/>
+        <line num="21" count="33" type="stmt"/>
+        <line num="22" count="33" type="stmt"/>
+        <line num="23" count="33" type="stmt"/>
+        <line num="27" count="66" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="66" type="stmt"/>
+        <line num="31" count="66" type="stmt"/>
+        <line num="32" count="66" type="stmt"/>
+        <line num="36" count="32" type="stmt"/>
+      </file>
+      <file name="FeatureScope.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/scope/FeatureScope.js">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="util">
+      <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="FileSystem.js" path="/home/monch1962/puppeteer-cucumber-gcf/features/support/util/FileSystem.js">
+        <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="36" count="22" type="stmt"/>
+        <line num="37" count="22" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="42" count="20" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

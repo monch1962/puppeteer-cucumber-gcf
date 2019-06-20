@@ -1,0 +1,57 @@
+{
+  "name": "puppeteer-cucumber-gcsf",
+  "version": "0.0.1",
+  "description": "A Node.js template for end-to-end testing your app with Cucumber.js and Puppeteer within a GCP Cloud Function",
+  "main": "index.js",
+  "files": [
+    "/features"
+  ],
+  "scripts": {
+    "start": "npx cucumber-js --format ./features/support/util/PrettyFormatter",
+    "test": "jest --verbose --runInBand",
+    "test-server": "http-server -p 8080 ./test/html",
+    "test-coverage": "codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monch1962/puppeteer-cucumber-gcf"
+  },
+  "keywords": [
+    "cucumber",
+    "puppeteer"
+  ],
+  "author": "David Mitchell <monch1962@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monch1962/puppeteer-cucumber-gcf/issues"
+  },
+  "homepage": "https://github.com/monch1962/puppeteer-cucumber-gcf#readme",
+  "dependencies": {
+    "axe-puppeteer": "^1.0.0",
+    "axe-reports": "^1.1.11",
+    "cucumber": "^5.1.0",
+    "dotenv": "^8.0.0",
+    "pixelmatch": "^5.0.0",
+    "puppeteer": "^1.16.0"
+  },
+  "devDependencies": {
+    "codecov": "^3.3.0",
+    "http-server": "^0.11.1",
+    "jest": "^24.7.1"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "setupFilesAfterEnv": [
+      "./test/jest.setup.js"
+    ]
+  },
+  "puppeteerOptions" : {
+    "headless": false,
+    "sloMo": 250,
+    "defaultViewport": {
+        "width": 1000,
+        "height": 1000
+    }
+}
+}
