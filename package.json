@@ -7,7 +7,7 @@
     "/features"
   ],
   "scripts": {
-    "start": "forever start ./node_modules/forever/bin/forever start ./node_modules/http-server/bin/http-server ./test/html && npx cucumber-js --format ./features/support/util/PrettyFormatter && ./node_modules/forever/bin/forever stop ./node_modules/http-server/bin/http-server ./test/html",
+    "unit-tests": "forever start ./node_modules/forever/bin/forever start ./node_modules/http-server/bin/http-server ./test/html && npx cucumber-js --format ./features/support/util/PrettyFormatter && ./node_modules/forever/bin/forever stop ./node_modules/http-server/bin/http-server ./test/html",
     "test": "jest --verbose --runInBand",
     "test-server": "http-server -p 8080 ./test/html",
     "test-coverage": "CODECOV_TOKEN='60b4e56a-a584-408e-900a-74a5407de488' codecov"
