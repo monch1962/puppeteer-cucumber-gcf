@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-cucumber-gcsf",
+  "name": "puppeteer-cucumber-gcf",
   "version": "0.0.1",
   "description": "A Node.js template for end-to-end testing your app with Cucumber.js and Puppeteer within a GCP Cloud Function",
   "main": "index.js",
@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "unit-tests": "forever start ./node_modules/forever/bin/forever start ./node_modules/http-server/bin/http-server ./test/html && npx cucumber-js --format ./features/support/util/PrettyFormatter && ./node_modules/forever/bin/forever stop ./node_modules/http-server/bin/http-server ./test/html",
-    "test": "jest --verbose --runInBand",
+    "start": "npx cucumber-js",
+    "test": "npx cucumber-js --format json | npx cucumber-junit > ./results/output_JUnit.xml",
+    "test-gcf": "jest --verbose --runInBand",
     "test-server": "http-server -p 8080 ./test/html",
     "test-coverage": "CODECOV_TOKEN='60b4e56a-a584-408e-900a-74a5407de488' codecov"
   },
@@ -36,15 +38,30 @@
   },
   "devDependencies": {
     "codecov": "^3.3.0",
+    "cucumber-junit": "^1.7.1",
     "forever": "^1.0.0",
     "http-server": "^0.11.1",
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "jest-junit": "^6.4.0"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
-    "setupFilesAfterEnv": [
-      "./test/jest.setup.js"
+    "testMatch": [
+      "./**/*.js"
+    ],
+    "reporters": [
+      [
+        "jest-junit",
+        {
+          "suiteName": "{title}",
+          "classNameTemplate": "{classname}-{title}",
+          "titleTemplate": "{classname}-{title}",
+          "ancestorSeparator": " > ",
+          "outputDirectory": "./reports/",
+          "outputName": "./junit.xml"
+        }
+      ]
     ]
   },
   "puppeteerOptions": {

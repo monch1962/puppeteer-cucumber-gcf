@@ -1,4 +1,5 @@
 # puppeteer-cucumber-gcf
+
 Puppeteer+Cucumber tests running inside a Google Cloud Function
 
 [![Build Status](https://dev.azure.com/monch1962/monch1962/_apis/build/status/monch1962.puppeteer-cucumber-gcf?branchName=master)](https://dev.azure.com/monch1962/monch1962/_build/latest?definitionId=4&branchName=master)
@@ -10,7 +11,22 @@ Bring in the Node library dependencies
 
 `$ npm install`
 
+## Executing tests locally
+
+`$ npm run test`
+
+## Executing tests within Docker container
+
+First build the container image
+
+`$ docker build . -t pcd`
+
+Then run tests and save the results file
+
+`$ docker run -v "$(pwd)/results:/results" pcd:latest`
+
 ## Unit tests
+
 Running unit tests involves starting a test web server, running a set of `.feature` files against that web server, then shutting down the web server
 
 `$ npm run unit-tests`
