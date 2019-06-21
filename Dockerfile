@@ -1,4 +1,3 @@
-#FROM cypress/base:10
 FROM node:10.15
 
 ENV BROWSER_API "puppeteer"
