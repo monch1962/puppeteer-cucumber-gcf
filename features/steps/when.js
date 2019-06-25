@@ -116,3 +116,35 @@ When (
     'I set the element {string} style {string} to {string}', 
     setElementStyle
 )
+
+When(
+    /^the geolocation is set to (-{0,1}[0-9]+(\.[0-9]+)) degrees latitude, (-{0,1}[0-9]+(\.[0-9]+)) degrees longitude$/,
+    async function(latitude, longitude) {
+        await setLocation(latitude, longitude)
+    }
+);
+
+When(
+    /^the browser is set (offline|online)$/,
+    async function(browser_mode) {
+        await setBrowser(browser_mode)
+    }
+);
+
+// Network monitoring?
+// Request interception/remapping
+// Gather page performance metrics
+
+When(
+    /^page tracing is set to record to "([^"]*)?"$/,
+    async function(page_trace_file) {
+        await startPageTrace(page_trace_file)
+    }
+);
+
+When(
+    /^page tracing is stopped$/,
+    async function() {
+        await stopPageTrace()
+    }
+)

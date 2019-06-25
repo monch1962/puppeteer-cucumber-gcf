@@ -122,3 +122,10 @@ Then(
     'I expect the {string} page has no accessibility errors',
     checkAccessibility   
 );
+
+Then(
+    /^the element "([^"]*)?" should be well named$/,
+    async function(selector) {
+        await checkSelectorIsWellNamed(selector)
+    }
+)

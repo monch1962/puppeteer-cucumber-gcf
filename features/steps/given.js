@@ -128,3 +128,42 @@ Given(
     'the {string} page has no accessibility errors',
     checkAccessibility   
 );
+
+Given(
+    /^the geolocation is set to (-{0,1}[0-9]+(\.[0-9]+)) degrees latitude, (-{0,1}[0-9]+(\.[0-9]+)) degrees longitude$/,
+    async function(latitude, longitude) {
+        await setLocation(latitude, longitude)
+    }
+);
+
+Given(
+    /^the browser is set (offline|online)$/,
+    async function(browser_mode) {
+        await setBrowser(browser_mode)
+    }
+);
+
+// Network monitoring?
+// Request interception/remapping
+// Gather page performance metrics
+
+Given(
+    /^page tracing is set to record to "([^"]*)?"$/,
+    async function(page_trace_file) {
+        await startPageTrace(page_trace_file)
+    }
+);
+
+Given(
+    /^page tracing is stopped$/,
+    async function() {
+        await stopPageTrace()
+    }
+)
+
+Given(
+    /^the browser is emulating "([^"]*)?"$/,
+    async function(device) {
+        await setEmulation(device)
+    }
+)
