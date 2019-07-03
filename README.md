@@ -21,9 +21,13 @@ First build the container image
 
 `$ docker build . -t pcd`
 
-Then run tests and save the results file
+Then run tests and save the results
 
 `$ docker run -v "$(pwd)/results:/results" pcd:latest`
+
+To run tests, prepending https://www.mysite.com/test to all URLs, and saving hte results
+
+`$ docker run -e ROOT_URL=https://www.mysite.com/test -v "$(pwd)/results:/results" pcd:latest`
 
 ## Unit tests
 
