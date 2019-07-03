@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "unit-tests": "forever start ./node_modules/forever/bin/forever start ./node_modules/http-server/bin/http-server ./test/html && npx cucumber-js --format ./features/support/util/PrettyFormatter && ./node_modules/forever/bin/forever stop ./node_modules/http-server/bin/http-server ./test/html",
-    "start": "npx cucumber-js",
-    "test": "TIMESTAMP=$(date +%Y%m%d%H%M%S) && npx cucumber-js --format json | npx cucumber-junit > ./results/test-output-$TIMESTAMP.xml",
+    "start": "npx cucumber-js testcases/features/**/*.feature",
+    "test": "TIMESTAMP=$(date +%Y%m%d%H%M%S) && npx cucumber-js --format json testcases/features/**/*.feature | npx cucumber-junit > ./results/test-output-$TIMESTAMP.xml",
     "test-gcf": "jest --verbose --runInBand",
     "test-server": "http-server -p 8080 ./test/html",
     "test-coverage": "CODECOV_TOKEN='60b4e56a-a584-408e-900a-74a5407de488' codecov"

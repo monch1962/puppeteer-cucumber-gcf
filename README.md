@@ -21,11 +21,27 @@ First build the container image
 
 `$ docker build . -t pcd`
 
-Then run tests and save the results
+To run tests and save the results to `./results`
 
 `$ docker run -v "$(pwd)/results:/results" pcd:latest`
 
-To run tests, prepending https://www.mysite.com/test to all URLs, and saving hte results
+To run tests, 
+- supplying your own feature file/s in local directory `./features` 
+- saving the results to `./results`,
+
+`$ docker run -e ROOT_URL=https://www.mysite.com/test -v "$(pwd)/features:/testcases/features" -v "$(pwd)/results:/results" pcd:latest`
+
+To run tests, 
+- supplying your own feature file/s in local directory `./features`, 
+- some additional custom steps in `./steps`, 
+- supporting implementations for those steps in `./support` 
+- saving results to `./results`
+
+`$ docker run -e ROOT_URL=https://www.mysite.com/test -v "$(pwd)/features:/testcases/features" -v "$(pwd)/steps:/testcases/steps/custom" -v "$(pwd)/support:/testcases/support/custom" -v "$(pwd)/results:/results" pcd:latest`
+
+To run tests, 
+- prepending `https://www.mysite.com/test` to all URLs in your feature files, 
+- saving the results to `./results`
 
 `$ docker run -e ROOT_URL=https://www.mysite.com/test -v "$(pwd)/results:/results" pcd:latest`
 
