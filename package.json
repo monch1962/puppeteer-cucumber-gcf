@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/monch1962/puppeteer-cucumber-gcf#readme",
   "dependencies": {
-    "axe-puppeteer": "^1.0.0",
+    "axe-puppeteer": "^1.1.1",
     "axe-reports": "^1.1.11",
     "cucumber": "^5.1.0",
     "dotenv": "^8.0.0",
